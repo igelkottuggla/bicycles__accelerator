@@ -1,0 +1,13 @@
+// root: true
+
+// env:
+//   browser: true
+
+{
+  "env" : {
+    "node" : true
+  }
+}
+
+// extends:
+//   "htmlacademy/es5"

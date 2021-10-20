@@ -1,0 +1,7 @@
+.nav__list {
+  @include reset-list-slyle;
+}
+
+.nav__link  {
+  @include reset-style-link;
+}

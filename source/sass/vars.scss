@@ -1,0 +1,42 @@
+$white: #ffffff;
+$dark-grey: #1c1c1c;
+$light-grey: #f6f6f6;
+$black: #000000;
+$turquoise : #0ad9c6;
+$light-blavk: #1f1f1f;
+$grey: #131314;
+$partial-opacity-grey: rgba(0, 0, 0, 0.7);
+$partical-opacity-light-grey: rgba(0, 0, 0, 0.5);
+$currentColor: inherit;
+
+/* Text colors */
+$black-text: $black;
+
+/* BG colors */
+
+/* Elements' colors */
+
+
+/*Fonts*/
+$main-f: "OpenSans-Regular", Arial, Helvetica, sans-serif;
+$light-f: "OpenSans-Light", Arial, Helvetica, sans-serif;
+$f-medium: "OpenSans-Medium", Arial, Helvetica, sans-serif;
+$f-semi-bold: "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
+$f-bold: "OpenSans-Bold", Arial, Helvetica, sans-serif;
+
+/* Font weight */
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/* Sizes and breakpoints*/
+$phones-min: 320px;
+$phones-max: 767px;
+$tablets-min: 768px;
+$tablets-max: 1023px;
+$desktops: 1024px;
+
+/* Retina */
+$resolution2x: 2dppx;

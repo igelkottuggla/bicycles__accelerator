@@ -1,0 +1,47 @@
+@mixin media-mobile {
+  @media (min-width: $phones-min) and (max-width: $phones-max) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (min-width: $tablets-min) and (max-width: $tablets-max) {
+    @content;
+  }
+}
+
+@mixin tablet-mobile {
+  @media (min-width: $phones-min) and (max-width: $tablets-max) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media (min-width: $desktops) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: $resolution2x) {
+    @content;
+  }
+}
+
+@mixin reset-style-link {
+  font-family: inherit;
+  color: $currentColor;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+@mixin reset-list-slyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-text-slyle {
+  margin: 0;
+  padding: 0;
+}

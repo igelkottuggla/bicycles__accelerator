@@ -1,0 +1,13 @@
+.header__button {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav__item:not(:last-of-type) {
+  margin-right: 135px;
+}

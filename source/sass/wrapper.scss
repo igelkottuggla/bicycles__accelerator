@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+  max-width: 1166px;
+  margin: 0 auto;
+
+  @include media-tablet {
+    width: 768px;
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  @include media-mobile {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
