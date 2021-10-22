@@ -42,7 +42,7 @@
     <title>Moon: велосипеды</title>
   </head>
   <body>
-    <header class="header header--index header--no-js">
+    <header class="header header--no-js">
       <div class="header__wrapper wrapper">
         <button
           class="header__button button"
@@ -52,16 +52,16 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link">О нас</a>
+              <a class="nav__link" href="#about">О нас</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Виды велосипедов</a>
+              <a class="nav__link" href="#bikes">Виды велосипедов</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="form.html">Видео про велосипеды</a>
+              <a class="nav__link" href="#video">Видео про велосипеды</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="form.html">Контакты</a>
+              <a class="nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -87,7 +87,7 @@
           </div>
 
           <form action="post" class="hero__form">
-            <h2 class="hero__title">
+            <h2 class="hero__form-title">
               Заполните поля ниже и мы подберем велосипед Вашей мечты
             </h2>
             <label for="name"></label>
@@ -197,7 +197,7 @@
           </div>
         </div>
         <div class="footer__map" id="map"></div>
-        <div class="footer__links">
+        <div class="footer__links" id="contacts">
           <a
             href="mailto:puteshestviemechta@gmail.ru"
             class="footer__link footer__link--mail"
@@ -209,5 +209,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

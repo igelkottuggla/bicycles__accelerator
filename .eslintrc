@@ -1,13 +1,17 @@
+
+{
+  "parserOptions": {
+        "ecmaVersion": 2017
+    },
+
+  "env" : {
+    "node" : true,
+     "es6": true
+  }
+}
 // root: true
 
 // env:
 //   browser: true
-
-{
-  "env" : {
-    "node" : true
-  }
-}
-
 // extends:
 //   "htmlacademy/es5"

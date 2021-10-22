@@ -3,16 +3,23 @@ $dark-grey: #1c1c1c;
 $light-grey: #f6f6f6;
 $black: #000000;
 $turquoise : #0ad9c6;
-$light-blavk: #1f1f1f;
+$light-black: #1f1f1f;
 $grey: #131314;
+$average-grey: #48494d;
 $partial-opacity-grey: rgba(0, 0, 0, 0.7);
 $partical-opacity-light-grey: rgba(0, 0, 0, 0.5);
 $currentColor: inherit;
 
 /* Text colors */
 $black-text: $black;
+$white-text: $white;
+$dark-grey-text: $dark-grey;
+$nav-gre-text: $average-grey;
 
 /* BG colors */
+$primary-turquoise-bg: $turquoise;
+$primary-white-color: $white;
+$nav-links-bg: $light-grey;
 
 /* Elements' colors */
 

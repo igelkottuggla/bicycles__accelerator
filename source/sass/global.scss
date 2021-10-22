@@ -36,3 +36,9 @@ main {
   flex: 1 0 auto;
   overflow: hidden;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    flex-shrink: 0;
+}

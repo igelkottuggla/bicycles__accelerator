@@ -1,0 +1,183 @@
+.hero {
+  padding-top: 257px;
+  padding-bottom: 240px;
+  color: $white-text;
+
+  @include tablet-mobile {
+    padding-top: 25px;
+  }
+}
+
+.hero .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 880px;
+
+  @include tablet-mobile {
+    flex-direction: column;
+  }
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/hero/hero-bg-dsk@1x.jpg");
+  width: 100vw;
+  height: 105%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include media-tablet {
+    height: 50%;
+  }
+
+  @include media-mobile {
+    height: 55%;
+  }
+
+}
+
+.hero__content {
+  width: 44.66%;
+
+  @include tablet-mobile {
+    width: 100%;
+  }
+}
+
+
+.hero__title {
+  @include hero-title;
+  @include reset-text-slyle;
+  font-size: 46px;
+  line-height: 64px;
+  margin-top: 30px;
+  letter-spacing: -0.005em;
+
+  @include tablet-mobile {
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @include media-tablet {
+    margin: 134px auto 20px;
+    width: 68%;
+  }
+
+  @include media-mobile {
+    margin: 120px auto 20px;
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+.hero__text {
+    @include reset-text-slyle;
+    font-family: $light-f;
+    font-weight: $font-weight-light;
+    letter-spacing: -0.005em;
+    opacity: 0.8;
+    margin-top: 24px;
+
+    @include media-desktop {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    @include tablet-mobile {
+      font-size: 18px;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    @include media-tablet {
+      margin: 0 auto;
+      width: 56.64%;
+    }
+
+    @include media-mobile {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 360px;
+    }
+}
+
+.hero__form-title {
+  @include reset-text-slyle;
+  font-family: $f-semi-bold;
+  font-weight: $font-weight-semibold;
+  text-align: center;
+  letter-spacing: -0.005em;
+
+  @include media-desktop {
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  @include tablet-mobile {
+    font-size: 18px;
+    line-height: 28px;
+    color: $black-text;
+  }
+
+  @include media-tablet {
+    margin-bottom: 30px;
+  }
+
+  @include media-mobile {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.hero__form {
+  margin-left: auto;
+  width: 37%;
+
+  @include media-tablet {
+    margin: 150px auto 0;
+    width: 41.8%;
+  }
+
+  @include media-mobile {
+    margin: 140px auto 0;
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+.hero__form input {
+  @include placeholder-text;
+  padding: 14px 5px 9px 29px;
+  width: 100%;
+  margin-bottom: 19px;
+  line-height: 24px;
+  color: $dark-grey-text;
+
+  @include media-tablet {
+    padding: 10px 21px;
+  }
+
+}
+
+.hero__form input::placeholder {
+  @include placeholder-text;
+  line-height: 24px;
+  color: $dark-grey-text;
+  opacity: 0.5;
+}
+
+.hero__button {
+  @include reset-style-button;
+  border-radius: 6px;
+  width: 100%;
+  padding: 16px 10px;
+}
