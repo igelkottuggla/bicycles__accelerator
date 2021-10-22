@@ -1,7 +1,9 @@
 .section__title {
+  @include reset-text-slyle;
   @include section-titles-dks;
   line-height: 30px;
   text-align: center;
+  letter-spacing: -0.005em;
 
   @include tablet-mobile {
     @include section-titles-tablet-mobile;

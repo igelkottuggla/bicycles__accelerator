@@ -1,6 +1,7 @@
 $white: #ffffff;
 $dark-grey: #1c1c1c;
 $light-grey: #f6f6f6;
+$light-grey2: #f6f7f9;
 $black: #000000;
 $turquoise : #0ad9c6;
 $light-black: #1f1f1f;
@@ -14,7 +15,8 @@ $currentColor: inherit;
 $black-text: $black;
 $white-text: $white;
 $dark-grey-text: $dark-grey;
-$nav-gre-text: $average-grey;
+$nav-grey-text: $average-grey;
+$turquoise-text: $turquoise;
 $partial-opacity-grey-text-07: $partial-opacity-grey;
 $partial-opacity-grey-text-05: $partical-opacity-light-grey;
 
@@ -23,6 +25,7 @@ $partial-opacity-grey-text-05: $partical-opacity-light-grey;
 $primary-turquoise-bg: $turquoise;
 $primary-white-color: $white;
 $nav-links-bg: $light-grey;
+$secondary-grey-bg: $light-grey2;
 
 /* Elements' colors */
 

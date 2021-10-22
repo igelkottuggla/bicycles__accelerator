@@ -5,6 +5,7 @@
 
   @include tablet-mobile {
     padding-top: 25px;
+    padding-bottom: 0;
   }
 }
 
@@ -33,13 +34,12 @@
   background-position: center;
 
   @include media-tablet {
-    height: 50%;
+    height: 80%;
   }
 
   @include media-mobile {
-    height: 55%;
+    height: 100%;
   }
-
 }
 
 .hero__content {

@@ -61,8 +61,6 @@
   line-height: 21px;
 }
 
-
-
 @mixin font(
     $fontFamily: $main-f,
     $fontSize: 16px,
@@ -97,6 +95,10 @@
 
 @mixin section-titles-tablet-mobile {
   @include font($f-semi-bold, 24px, $font-weight-semibold, normal);
+}
+
+@mixin plain-text {
+  @include font($main-f, 22px, $font-weight-normal, normal);
 }
 
 

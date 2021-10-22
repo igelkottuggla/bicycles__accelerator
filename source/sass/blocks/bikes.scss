@@ -1,0 +1,48 @@
+.bikes {
+  margin-top: 130px;
+  padding-top: 149px;
+  padding-bottom: 147px;
+  background-color: $secondary-grey-bg;
+
+  @include tablet-mobile {
+    margin-top: 70px;
+    padding-top: 50px;
+
+  }
+
+  @include media-tablet {
+    padding-bottom: 70px;
+  }
+
+  @include media-mobile {
+    padding-bottom: 52px;
+  }
+}
+
+.bikes__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 51px;
+  width: 100%;
+  flex-grow: 1;
+  margin: 51px auto 0;
+  padding-left: 60px;
+  padding-right: 36px;
+
+  @include tablet-mobile {
+    margin-top: 30px;
+  }
+
+  @include media-tablet {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+
+  @include media-mobile {
+    flex-direction: column;
+    padding: 0;
+  }
+}
