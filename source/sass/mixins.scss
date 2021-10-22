@@ -90,3 +90,13 @@
 @mixin placeholder-text {
   @include font($main-f, 15px, $font-weight-normal, normal);
 }
+
+@mixin section-titles-dks {
+  @include font($f-semi-bold, 30px, $font-weight-semibold, normal);
+}
+
+@mixin section-titles-tablet-mobile {
+  @include font($f-semi-bold, 24px, $font-weight-semibold, normal);
+}
+
+

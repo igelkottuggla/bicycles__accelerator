@@ -1,0 +1,117 @@
+.footer {
+  margin-top: 150px;
+  padding-bottom: 98px;
+
+  @include media-tablet {
+    margin-top: 70px;
+    padding-bottom: 53px;
+  }
+
+  @include media-mobile {
+    margin-top: 70px;
+    padding-bottom: 51px;
+  }
+}
+
+
+.footer__contacts-title {
+  margin-bottom: 30px;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__contacts-address {
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  color: $partial-opacity-grey-text-07;
+  width: 47.6%;
+  margin: 0 auto 42px;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 629px;
+  }
+
+  @include media-mobile {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+
+.footer__map {
+  margin: 0 auto 38px;
+  width: 957px;
+  height: 530px;
+  background-image: url("../img/map/map@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+    width: 698px;
+    height: 545px;
+    background-image: url("../img/map/map-tablet@1x.png");
+  }
+
+  @include media-mobile {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 360px;
+    height: 250px;
+    background-image: url("../img/map/map-mob@1x.png");
+  }
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 22px;
+  color: $partial-opacity-grey-text-05;
+  gap: 127px;
+
+  @include media-mobile {
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+
+.footer__link {
+  @include reset-style-link;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    left: -36px;
+    transform: translateY(-50%);
+    background-size: cover;
+  }
+}
+
+.footer__link--mail {
+  &::before {
+    width: 26px;
+    height: 20px;
+    background-image: url("../img/svg/mail-icon.svg");
+  }
+}
+
+.footer__link--tel {
+  &::before {
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/svg/tel-icon.svg");
+  }
+}

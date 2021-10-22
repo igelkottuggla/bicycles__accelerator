@@ -1,0 +1,10 @@
+.section__title {
+  @include section-titles-dks;
+  line-height: 30px;
+  text-align: center;
+
+  @include tablet-mobile {
+    @include section-titles-tablet-mobile;
+    line-height: 41px;
+  }
+}

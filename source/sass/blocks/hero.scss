@@ -82,13 +82,10 @@
     font-family: $light-f;
     font-weight: $font-weight-light;
     letter-spacing: -0.005em;
+    font-size: 20px;
+    line-height: 32px;
     opacity: 0.8;
     margin-top: 24px;
-
-    @include media-desktop {
-      font-size: 20px;
-      line-height: 32px;
-    }
 
     @include tablet-mobile {
       font-size: 18px;
@@ -114,12 +111,9 @@
   font-weight: $font-weight-semibold;
   text-align: center;
   letter-spacing: -0.005em;
-
-  @include media-desktop {
-    font-size: 17px;
-    line-height: 28px;
-    margin-bottom: 20px;
-  }
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 20px;
 
   @include tablet-mobile {
     font-size: 18px;
