@@ -1,0 +1,115 @@
+.video {
+  padding-top: 122px;
+  color: $white-text;
+  background: linear-gradient(180deg,#131314 88%,#fff 88%);
+  min-height: 805px;
+
+  @include media-tablet {
+    padding-top: 70px;
+    background: linear-gradient(180deg,#131314 82%,#fff 82%);
+    min-height: 503px;
+  }
+
+  @include media-mobile {
+    padding-top: 85px;
+    min-height: 438px;
+  }
+}
+
+.video .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video h2 {
+  margin-bottom: 20px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+}
+
+.video p {
+  @include reset-text-slyle;
+  @include accent-text;
+  line-height: 28px;
+  margin-bottom: 55px;
+  width: 29.16%;
+  text-align: center;
+
+  @include media-tablet {
+    margin-bottom: 40px;
+    width: 59.86%;
+  }
+
+  @include media-mobile {
+    margin-bottom: 51px;
+    width: 100%;
+  }
+}
+
+.video__container {
+  position:absolute;
+  content: "";
+  top: 160px;
+  min-height: 522px;
+  width: 929px;
+
+  @include media-tablet {
+    top: 145px;
+    width: 503px;
+    height: 282px;
+    min-height: auto;
+  }
+
+  @include media-mobile {
+    top: 187px;
+    width: 288px;
+    min-height: 161px;
+  }
+}
+
+.video__content {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+
+.video__button {
+  @include reset-style-button;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-image: url("../img/svg/pause-icon.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+
+  @include media-tablet {
+    width: 90px;
+    height: 90px;
+    background-size: 25px 25px;
+  }
+}
+
+.video__button:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.video__button:active {
+  transform: translate(-50%, -50%) scale(0.97);
+  opacity: 0.9;
+}
+
+.video__button--active {
+  background-image: url("../img/svg/play-icon.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 19px 25px;
+}

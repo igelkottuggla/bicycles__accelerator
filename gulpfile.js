@@ -10,7 +10,7 @@ var server = require('browser-sync').create();
 var csso = require('gulp-csso');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
-var webp = require('gulp-webp');
+var webp = require("gulp-webp");
 var svgstore = require('gulp-svgstore');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
@@ -67,7 +67,7 @@ gulp.task('webp', function () {
   return gulp
       .src('source/img/**/*.{png,jpg}')
       .pipe(webp({quality: 90}))
-      .pipe(gulp.dest('source/img'));
+      .pipe(gulp.dest('build/img'));
 });
 
 gulp.task('sprite', function () {
@@ -92,7 +92,7 @@ gulp.task('copy', function () {
             'source/fonts/*.{woff,woff2}',
             'source/img/**/*.{png,jpg,svg}',
             'source/js/**',
-            'source//*.ico',
+            'source/video/**'
           ],
           {
             base: 'source',
@@ -105,5 +105,5 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'webp'));
 gulp.task('start', gulp.series('build', 'server'));

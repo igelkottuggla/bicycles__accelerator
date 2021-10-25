@@ -1,23 +1,21 @@
-@mixin media-mobile {
-  @media (min-width: $phones-min) and (max-width: $phones-max) {
+
+@mixin media-desktop {
+  @media (min-width: $desktops) {
     @content;
   }
 }
-
 @mixin media-tablet {
   @media (min-width: $tablets-min) and (max-width: $tablets-max) {
     @content;
   }
 }
-
 @mixin tablet-mobile {
   @media (min-width: $phones-min) and (max-width: $tablets-max) {
     @content;
   }
 }
-
-@mixin media-desktop {
-  @media (min-width: $desktops) {
+@mixin media-mobile {
+  @media (min-width: $phones-min) and (max-width: $phones-max) {
     @content;
   }
 }
@@ -62,27 +60,27 @@
 }
 
 @mixin font(
-    $fontFamily: $main-f,
-    $fontSize: 16px,
-    $fontWeight: $font-weight-normal,
-    $fontStyle: normal
+  $fontFamily: $main-f,
+  $fontSize: 16px,
+  $fontWeight: $font-weight-normal,
+  $fontStyle: normal
 ) {
-    font-family: $fontFamily;
-    font-size: $fontSize;
-    font-weight: $fontWeight;
-    font-style: $fontStyle;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-style: $fontStyle;
 }
 
 @mixin accent-text {
-    @include font($light-f, 16px, $font-weight-light, normal);
+  @include font($light-f, 16px, $font-weight-light, normal);
 }
 
 @mixin big-accent-text {
-    @include font($light-f, 18px, $font-weight-light, normal);
+  @include font($light-f, 18px, $font-weight-light, normal);
 }
 
 @mixin hero-title {
-    @include font($f-bold, 30px, $font-weight-bold, normal);
+  @include font($f-bold, 30px, $font-weight-bold, normal);
 }
 
 @mixin placeholder-text {
@@ -100,5 +98,3 @@
 @mixin plain-text {
   @include font($main-f, 22px, $font-weight-normal, normal);
 }
-
-

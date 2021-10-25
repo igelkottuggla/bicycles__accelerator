@@ -10,6 +10,9 @@ $average-grey: #48494d;
 $partial-opacity-grey: rgba(0, 0, 0, 0.7);
 $partical-opacity-light-grey: rgba(0, 0, 0, 0.5);
 $currentColor: inherit;
+$border-light-grey: #c9ccd4;
+$border-bottom-nav: rgba(255, 255, 255, 0.2);
+$error: #ca0707;
 
 /* Text colors */
 $black-text: $black;
@@ -19,16 +22,16 @@ $nav-grey-text: $average-grey;
 $turquoise-text: $turquoise;
 $partial-opacity-grey-text-07: $partial-opacity-grey;
 $partial-opacity-grey-text-05: $partical-opacity-light-grey;
-
+$error-text: $error;
 
 /* BG colors */
 $primary-turquoise-bg: $turquoise;
 $primary-white-color: $white;
 $nav-links-bg: $light-grey;
+$primary-grey-bg: $dark-grey;
 $secondary-grey-bg: $light-grey2;
-
-/* Elements' colors */
-
+$secondary-dark-grey-bg: $average-grey;
+$border-input-color: $border-light-grey;
 
 /*Fonts*/
 $main-f: "OpenSans-Regular", Arial, Helvetica, sans-serif;

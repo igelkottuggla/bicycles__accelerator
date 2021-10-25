@@ -27,7 +27,6 @@
     background-image: url("../img/svg/burger-icon.svg");
     background-repeat: no-repeat;
     background-position: center center;
-
   }
 }
 
@@ -58,4 +57,22 @@
   }
 }
 
+@include tablet-mobile {
+  .header--no-js .nav__list{
+    display: flex;
+    flex-direction: column;
+    color: $nav-grey-text;
+  }
 
+  .header--no-js .nav {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: $primary-white-color;
+    z-index: 3;
+  }
+
+  .header--no-js .header__button {
+    display: none;
+  }
+}

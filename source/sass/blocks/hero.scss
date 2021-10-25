@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 257px;
+  padding-top: 245px;
   padding-bottom: 240px;
   color: $white-text;
 
@@ -22,9 +22,9 @@
 .hero::before {
   position: absolute;
   content: "";
-  background-image: url("../../img/hero/hero-bg-dsk@1x.jpg");
+  background: $primary-grey-bg url("../img/hero/hero-bg-dsk@1x.jpg");
   width: 100vw;
-  height: 105%;
+  height: 825px;
   top: 0;
   left: 0;
   right: 0;
@@ -33,13 +33,31 @@
   background-size: cover;
   background-position: center;
 
+  @include retina {
+    background: $primary-grey-bg url("../img/hero/hero-bg-dsk@2x.jpg");
+  }
+
   @include media-tablet {
-    height: 80%;
+    height: 340px;
+    background: $primary-grey-bg url("../img/hero/hero-bg-tablet@1x.jpg");
+
+    @include retina {
+      background: $primary-grey-bg url("../img/hero/hero-bg-tablet@2x.jpg");
+    }
   }
 
   @include media-mobile {
-    height: 100%;
+    height: 390px;
+    background: $primary-grey-bg url("../img/hero/hero-bg-mob@1x.jpg");
+
+    @include retina {
+      background: $primary-grey-bg url("../img/hero/hero-bg-mob@2x.jpg");
+    }
   }
+}
+
+.hero--no-js::before {
+  top: 370px;
 }
 
 .hero__content {
@@ -50,8 +68,7 @@
   }
 }
 
-
-.hero__title {
+.hero h1 {
   @include hero-title;
   @include reset-text-slyle;
   font-size: 46px;
@@ -66,46 +83,46 @@
   }
 
   @include media-tablet {
-    margin: 134px auto 20px;
+    margin: 90px auto 19px;
     width: 68%;
   }
 
   @include media-mobile {
-    margin: 120px auto 20px;
+    margin: 75px auto 20px;
     width: 100%;
     max-width: 360px;
   }
 }
 
-.hero__text {
-    @include reset-text-slyle;
-    font-family: $light-f;
-    font-weight: $font-weight-light;
-    letter-spacing: -0.005em;
-    font-size: 20px;
+.hero p {
+  @include reset-text-slyle;
+  font-family: $light-f;
+  font-weight: $font-weight-light;
+  letter-spacing: -0.005em;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.8;
+  margin-top: 25px;
+
+  @include tablet-mobile {
+    font-size: 18px;
     line-height: 32px;
-    opacity: 0.8;
-    margin-top: 24px;
+    text-align: center;
+  }
 
-    @include tablet-mobile {
-      font-size: 18px;
-      line-height: 32px;
-      text-align: center;
-    }
+  @include media-tablet {
+    margin: 0 auto;
+    width: 56.64%;
+  }
 
-    @include media-tablet {
-      margin: 0 auto;
-      width: 56.64%;
-    }
-
-    @include media-mobile {
-      margin: 0 auto;
-      width: 100%;
-      max-width: 360px;
-    }
+  @include media-mobile {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 360px;
+  }
 }
 
-.hero__form-title {
+.hero h2 {
   @include reset-text-slyle;
   font-family: $f-semi-bold;
   font-weight: $font-weight-semibold;
@@ -113,6 +130,7 @@
   letter-spacing: -0.005em;
   font-size: 17px;
   line-height: 28px;
+  margin-top: 5px;
   margin-bottom: 20px;
 
   @include tablet-mobile {
@@ -124,7 +142,6 @@
   @include media-tablet {
     margin-bottom: 30px;
   }
-
   @include media-mobile {
     margin-bottom: 20px;
     padding-left: 10px;
@@ -137,12 +154,12 @@
   width: 37%;
 
   @include media-tablet {
-    margin: 150px auto 0;
-    width: 41.8%;
+    margin: 144px auto 0;
+    width: 44.8%;
   }
 
   @include media-mobile {
-    margin: 140px auto 0;
+    margin: 135px auto 0;
     width: 100%;
     max-width: 360px;
   }
@@ -150,16 +167,28 @@
 
 .hero__form input {
   @include placeholder-text;
-  padding: 14px 5px 9px 29px;
+  padding: 12px 5px 11px 29px;
   width: 100%;
   margin-bottom: 19px;
   line-height: 24px;
   color: $dark-grey-text;
+  border: 1px solid $border-input-color;
+  border-radius: 6px;
+  box-sizing: border-box;
 
   @include media-tablet {
-    padding: 10px 21px;
+    padding: 12px 23px;
   }
 
+  @include media-mobile {
+    margin-bottom: 18px;
+    padding: 13px 5px 11px 26px;
+  }
+}
+
+.hero__form input:focus {
+  border: 1px solid $primary-turquoise-bg;
+  outline: none;
 }
 
 .hero__form input::placeholder {
@@ -174,4 +203,12 @@
   border-radius: 6px;
   width: 100%;
   padding: 16px 10px;
+
+  @include media-tablet {
+    padding: 15px 10px;
+  }
+
+  @include media-mobile {
+    padding: 14px 10px;
+  }
 }

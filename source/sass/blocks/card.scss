@@ -53,8 +53,8 @@
     width: 47px;
     height: 47px;
     border: 8px solid #0AD9C6;
-    bottom: 40px;
-    right: -20px;
+    bottom: 33px;
+    right: -24px;
     z-index: 1;
 
     @include tablet-mobile {
@@ -71,8 +71,8 @@
     height: 95px;
     border: 17px solid #0AD9C6;
     border-radius: 50%;
-    top: 2%;
-    right: -30px;
+    top: -5%;
+    right: -35px;
     z-index: 1;
 
     @include tablet-mobile {
@@ -110,7 +110,7 @@
       height: 127px;
       border: 18px solid #0AD9C6;
       top: 201px;
-      left: -50px;
+      left: -38px;
     }
 
     @include media-mobile {
@@ -119,7 +119,7 @@
   }
 }
 
-.card__img {
+.card img {
   object-fit: contain;
   border-radius: 10px;
 
@@ -130,12 +130,12 @@
   }
 }
 
-.card:nth-child(3n-1) .card__img {
+.card:nth-child(3n-1) img {
   object-fit: cover;
   border-radius: 10px;
 }
 
-.card__title {
+.card h3 {
   @include reset-text-slyle;
   font-family: $f-semi-bold;
   font-weight: $font-weight-semibold;
