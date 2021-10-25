@@ -191,6 +191,20 @@
   outline: none;
 }
 
+.hero__form input:hover {
+  border: 1px solid $primary-turquoise-bg;
+  outline: none;
+}
+
+.hero__form input[type="number"] {
+  appearance: textfield;
+}
+
+.hero__form input[type="number"]::-webkit-outer-spin-button,
+.hero__form input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
 .hero__form input::placeholder {
   @include placeholder-text;
   line-height: 24px;
