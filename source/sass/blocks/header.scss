@@ -17,7 +17,7 @@
 .header__button {
   display: none;
 
-  @include tablet-mobile{
+  @include tablet-mobile {
     @include reset-style-button;
     position: absolute;
     top: 0;
@@ -31,13 +31,13 @@
 }
 
 .header--open .header__button {
-    background-image: url('../img/svg/cross-icon.svg');
-    background-color: transparent;
-    z-index: 99;
+  background-image: url("../img/svg/cross-icon.svg");
+  background-color: transparent;
+  z-index: 99;
 }
 
 @include tablet-mobile {
-  .header--open .nav__list{
+  .header--open .nav__list {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
@@ -58,7 +58,7 @@
 }
 
 @include tablet-mobile {
-  .header--no-js .nav__list{
+  .header--no-js .nav__list {
     display: flex;
     flex-direction: column;
     color: $nav-grey-text;

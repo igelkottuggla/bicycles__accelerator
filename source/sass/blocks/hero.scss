@@ -74,7 +74,7 @@
   font-size: 46px;
   line-height: 64px;
   margin-top: 30px;
-  letter-spacing: -0.005em;
+  letter-spacing: $small-letter-spacing;
 
   @include tablet-mobile {
     font-size: 30px;
@@ -98,7 +98,7 @@
   @include reset-text-slyle;
   font-family: $light-f;
   font-weight: $font-weight-light;
-  letter-spacing: -0.005em;
+  letter-spacing: $small-letter-spacing;
   font-size: 20px;
   line-height: 32px;
   opacity: 0.8;
@@ -127,7 +127,7 @@
   font-family: $f-semi-bold;
   font-weight: $font-weight-semibold;
   text-align: center;
-  letter-spacing: -0.005em;
+  letter-spacing: $small-letter-spacing;
   font-size: 17px;
   line-height: 28px;
   margin-top: 5px;
@@ -142,6 +142,7 @@
   @include media-tablet {
     margin-bottom: 30px;
   }
+
   @include media-mobile {
     margin-bottom: 20px;
     padding-left: 10px;
@@ -166,7 +167,7 @@
 }
 
 .hero__form label {
-  display: none
+  display: none;
 }
 
 .hero__form input {

@@ -19,7 +19,7 @@
     width: 35.16%;
   }
 
-  @include media-mobile  {
+  @include media-mobile {
     width: 100%;
     max-width: 360px;
   }
@@ -37,7 +37,7 @@
     content: "";
     width: 47px;
     height: 47px;
-    border: 8px solid #0AD9C6;
+    border: 8px solid $primary-turquoise-bg;
     top: 20px;
     left: -20px;
     z-index: 1;
@@ -52,7 +52,7 @@
     content: "";
     width: 47px;
     height: 47px;
-    border: 8px solid #0AD9C6;
+    border: 8px solid $primary-turquoise-bg;
     bottom: 33px;
     right: -24px;
     z-index: 1;
@@ -69,7 +69,7 @@
     content: "";
     width: 95px;
     height: 95px;
-    border: 17px solid #0AD9C6;
+    border: 17px solid $primary-turquoise-bg;
     border-radius: 50%;
     top: -5%;
     right: -35px;
@@ -78,7 +78,7 @@
     @include tablet-mobile {
       width: 68px;
       height: 68px;
-      border: 13px solid #0AD9C6;
+      border: 13px solid $primary-turquoise-bg;
     }
 
     @include media-tablet {
@@ -99,7 +99,7 @@
     content: "";
     width: 180px;
     height: 180px;
-    border: 27px solid #0AD9C6;
+    border: 27px solid $primary-turquoise-bg;
     border-radius: 50%;
     top: 156px;
     left: -70px;
@@ -108,7 +108,7 @@
     @include tablet-mobile {
       width: 127px;
       height: 127px;
-      border: 18px solid #0AD9C6;
+      border: 18px solid $primary-turquoise-bg;
       top: 201px;
       left: -38px;
     }
@@ -123,7 +123,7 @@
   object-fit: contain;
   border-radius: 10px;
 
-  @include tablet-mobile{
+  @include tablet-mobile {
     width: 270px;
     height: 300px;
     object-fit: cover;

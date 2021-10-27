@@ -3,7 +3,7 @@
   @include section-titles-dks;
   line-height: 30px;
   text-align: center;
-  letter-spacing: -0.005em;
+  letter-spacing: $small-letter-spacing;
 
   @include tablet-mobile {
     @include section-titles-tablet-mobile;

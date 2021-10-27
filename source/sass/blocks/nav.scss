@@ -57,7 +57,7 @@
   }
 }
 
-.nav__item a  {
+.nav__item a {
   @include reset-style-link;
   padding: 10px 0;
 
@@ -76,7 +76,7 @@
 }
 
 @include tablet-mobile {
-  .header--open .nav__list{
+  .header--open .nav__list {
     display: flex;
     flex-direction: column;
     margin-top: 100px;

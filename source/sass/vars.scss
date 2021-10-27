@@ -32,13 +32,14 @@ $primary-grey-bg: $dark-grey;
 $secondary-grey-bg: $light-grey2;
 $secondary-dark-grey-bg: $average-grey;
 $border-input-color: $border-light-grey;
+$dark-grey-bg: $grey;
 
 /*Fonts*/
-$main-f: "OpenSans-Regular", Arial, Helvetica, sans-serif;
-$light-f: "OpenSans-Light", Arial, Helvetica, sans-serif;
-$f-medium: "OpenSans-Medium", Arial, Helvetica, sans-serif;
-$f-semi-bold: "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
-$f-bold: "OpenSans-Bold", Arial, Helvetica, sans-serif;
+$main-f: "OpenSans-Regular", "Arial", "Helvetica", sans-serif;
+$light-f: "OpenSans-Light", "Arial", "Helvetica", sans-serif;
+$f-medium: "OpenSans-Medium", "Arial", "Helvetica", sans-serif;
+$f-semi-bold: "OpenSans-SemiBold", "Arial", "Helvetica", sans-serif;
+$f-bold: "OpenSans-Bold", "Arial", "Helvetica", sans-serif;
 
 /* Font weight */
 $font-weight-light: 300;
@@ -53,6 +54,8 @@ $phones-max: 767px;
 $tablets-min: 768px;
 $tablets-max: 1023px;
 $desktops: 1024px;
+
+$small-letter-spacing: -0.01em;
 
 /* Retina */
 $resolution2x: 2dppx;
