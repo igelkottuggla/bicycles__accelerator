@@ -165,6 +165,10 @@
   }
 }
 
+.hero__form label {
+  display: none
+}
+
 .hero__form input {
   @include placeholder-text;
   padding: 12px 5px 11px 29px;
@@ -212,7 +216,7 @@
   opacity: 0.5;
 }
 
-.hero__button {
+.hero__form button {
   @include reset-style-button;
   border-radius: 6px;
   width: 100%;

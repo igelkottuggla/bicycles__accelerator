@@ -64,7 +64,8 @@
   background-size: cover;
 
   @include retina {
-    background: $secondary-dark-grey-bg url("../img/map/map@2x.png");background-repeat: no-repeat;
+    background: $secondary-dark-grey-bg url("../img/map/map@2x.png");
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
   }
@@ -99,6 +100,7 @@
 }
 
 .footer__links {
+  @include reset-list-slyle;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,8 +124,7 @@
   }
 }
 
-.footer__link {
-  @include reset-style-link;
+.footer__link-item {
   position: relative;
 
   &::before {
@@ -137,7 +138,11 @@
   }
 }
 
-.footer__link--mail {
+.footer__link-item a {
+  @include reset-style-link;
+}
+
+.footer__link-item--mail {
   padding-left: 34px;
 
   &::before {
@@ -148,7 +153,7 @@
   }
 }
 
-.footer__link--tel {
+.footer__link-item--tel {
   padding-left: 37px;
 
   @include media-mobile {
@@ -167,10 +172,10 @@
   }
 }
 
-.footer__link:hover {
+.footer__link-item:hover {
   color: $turquoise-text;
 }
 
-.footer__link:active {
+.footer__link-item:active {
   opacity: 0.5;
 }
