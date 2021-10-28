@@ -5,6 +5,7 @@ const hero = document.querySelector('.hero');
 
 const gap = 100;
 
+
 if (header) {
   header.classList.remove('header--no-js');
   hero.classList.remove('hero--no-js');
@@ -58,6 +59,9 @@ if (video) {
 const form = document.querySelector('.hero__form');
 
 if (form) {
+
+  const submitBtn = document.querySelector('.hero__form button');
+
   const validatePhoneNumber = (inputStr) => {
     const regExp =
       /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
@@ -66,7 +70,7 @@ if (form) {
   };
 
   const validateName = (inputStr) => {
-    const regExp = /^[А-ЯЁ][а-яё]+$/;
+    const regExp = /^[а-яё]+$/;
     return regExp.test(inputStr);
   };
 
@@ -88,5 +92,12 @@ if (form) {
     event.preventDefault();
   };
 
-  form.addEventListener('submit', validateForm);
+  form.addEventListener('submit', () => {
+    validateForm();
+  });
+
+  submitBtn.addEventListener('click', () => {
+    localStorage.setItem('tel', document.getElementById('tel').value);
+    localStorage.setItem('name', document.getElementById('name').value);
+  });
 }

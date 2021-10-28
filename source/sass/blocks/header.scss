@@ -30,6 +30,10 @@
   }
 }
 
+.header__button:hover {
+    animation: rotate-center 0.6s ease-in-out both;
+}
+
 .header--open .header__button {
   background-image: url("../img/svg/cross-icon.svg");
   background-color: transparent;
@@ -54,8 +58,21 @@
     right: 0;
     background-color: $primary-white-color;
     z-index: 3;
+	  animation: tilt-in-right 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 }
+
+@keyframes tilt-in-right {
+  0% {
+    transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+
 
 @include tablet-mobile {
   .header--no-js .nav__list {
@@ -74,5 +91,16 @@
 
   .header--no-js .header__button {
     display: none;
+  }
+}
+
+
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

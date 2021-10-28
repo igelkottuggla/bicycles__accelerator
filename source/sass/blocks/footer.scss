@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 150px;
+  margin-top: 145px;
   padding-bottom: 98px;
 
   @include media-tablet {
@@ -149,11 +149,24 @@
     width: 26px;
     height: 20px;
     background-image: url("../img/svg/mail-icon.svg");
+
+    @include media-tablet {
+      left: -10px;
+    }
+
+    @include media-mobile {
+      transform: translateY(-35%);
+    }
   }
 }
 
 .footer__link-item--tel {
   padding-left: 37px;
+
+
+  @include media-tablet {
+    padding-left: 27px;
+  }
 
   @include media-mobile {
     padding-left: 7px;
@@ -165,8 +178,13 @@
     height: 22px;
     background-image: url("../img/svg/tel-icon.svg");
 
+    @include media-tablet {
+      left: -10px;
+    }
+
     @include media-mobile {
       left: -27px;
+      transform: translateY(-55%);
     }
   }
 }

@@ -1,7 +1,7 @@
 .video {
   padding-top: 122px;
   color: $white-text;
-  background: linear-gradient(180deg, $dark-grey-bg 88%, $primary-white-color 88%);
+  background: linear-gradient(180deg, $dark-grey-bg 87%, $primary-white-color 87%);
   min-height: 805px;
 
   @include media-tablet {
@@ -13,6 +13,7 @@
   @include media-mobile {
     padding-top: 85px;
     min-height: 438px;
+    background: linear-gradient(180deg, $dark-grey-bg 88%, $primary-white-color 88%);
   }
 }
 
@@ -50,21 +51,18 @@
 }
 
 .video__container {
-  position: absolute;
-  content: "";
-  top: 160px;
+  position: relative;
   min-height: 522px;
   width: 929px;
+  overflow: hidden;
 
   @include media-tablet {
-    top: 145px;
     width: 503px;
     height: 282px;
     min-height: auto;
   }
 
   @include media-mobile {
-    top: 187px;
     width: 288px;
     min-height: 161px;
   }
@@ -82,7 +80,7 @@
   content: "";
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
   width: 65px;
   height: 65px;
   border-radius: 50%;
@@ -95,6 +93,11 @@
     width: 90px;
     height: 90px;
     background-size: 25px 25px;
+    transform: translate(-50%, -50%);
+  }
+
+  @include media-mobile {
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -111,5 +114,9 @@
   background-image: url("../img/svg/play-icon.svg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 19px 25px;
+  background-size: 12px 27px;
+
+  @include media-tablet {
+    background-size: 20px 29px;
+  }
 }

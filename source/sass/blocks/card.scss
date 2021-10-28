@@ -7,7 +7,7 @@
   flex-grow: 1;
   max-width: 342px;
   text-align: center;
-  min-height: 661px;
+  min-height: 658px;
   z-index: 1;
   width: 27.99%;
 
@@ -53,8 +53,8 @@
     width: 47px;
     height: 47px;
     border: 8px solid $primary-turquoise-bg;
-    bottom: 33px;
-    right: -24px;
+    bottom: 31px;
+    right: -23px;
     z-index: 1;
 
     @include tablet-mobile {
