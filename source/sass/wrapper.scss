@@ -1,6 +1,8 @@
 .wrapper {
   width: 100%;
-  max-width: 1166px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1206px;
   margin: 0 auto;
 
   @include media-tablet {

@@ -73,7 +73,7 @@
       <section class="hero hero--no-js">
         <div class="wrapper">
           <div class="hero__content">
-            <a href="/">
+            <a>
               <img
                 src="./img/svg/logo-icon.svg"
                 width="68"
@@ -89,7 +89,7 @@
 
           <form
             method="post"
-            action="https://echo.htmlacademy.ru/"
+            action="https://echo.htmlacademy.ru"
             class="hero__form"
           >
             <h2>Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
@@ -97,19 +97,20 @@
             <input
               type="text"
               id="name"
+              name="name"
               placeholder="Введите Ваше Имя"
+              pattern="^[А-Яа-яЁё\s]+$"
               required
             />
             <label for="tel">Ваш телефон</label>
             <input
               type="tel"
               id="tel"
+              name="tel"
+              data-phone-pattern
               placeholder="Введите Ваш номер телефона"
               required
             />
-            <div id="error" class="hero__error hidden">
-              Что-то пошло не так. Пожалуйста, попробуйте еще раз
-            </div>
             <button type="submit">Подобрать велосипед мечты</button>
           </form>
         </div>
@@ -143,6 +144,7 @@
               <picture>
                 <!-- 1x: 270x300px; 2x: 540x600px -->
                 <source
+                  type="image/webp"
                   srcset="
                     ./img/bikes/urban-mob@1x.webp 1x,
                     ./img/bikes/urban-mob@2x.webp 2x
@@ -159,6 +161,7 @@
                 />
                 <!-- 1x: 342x503px; 2x: 684x1006px -->
                 <source
+                  type="image/webp"
                   srcset="
                     ./img/bikes/urban-dsk@1x.webp 1x,
                     ./img/bikes/urban-dsk@2x.webp 2x
@@ -181,6 +184,7 @@
               <picture>
                 <!-- 1x: 270x300px; 2x: 540x600px -->
                 <source
+                  type="image/webp"
                   srcset="
                     ./img/bikes/mountain-mob@1x.webp 1x,
                     ./img/bikes/mountain-mob@2x.webp 2x
@@ -197,6 +201,7 @@
                 />
                 <!-- 1x: 342x566px; 2x: 684x1132px -->
                 <source
+                  type="image/webp"
                   srcset="
                     ./img/bikes/mountain-dsk@1x.webp 1x,
                     ./img/bikes/mountain-dsk@2x.webp 2x
@@ -219,6 +224,7 @@
               <picture>
                 <!-- 1x: 270x300px; 2x: 540x600px -->
                 <source
+                  type="image/webp"
                   srcset="
                     ./img/bikes/kids-mob@1x.webp 1x,
                     ./img/bikes/kids-mob@2x.webp 2x
@@ -235,6 +241,7 @@
                 />
                 <!-- 1x: 342x513px; 2x: 684x1026px -->
                 <source
+                  type="image/webp"
                   srcset="
                     ./img/bikes/kids-dsk@1x.webp 1x,
                     ./img/bikes/kids-dsk@2x.webp 2x

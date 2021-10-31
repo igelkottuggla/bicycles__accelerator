@@ -1,7 +1,7 @@
 .bikes {
   margin-top: 153px;
   padding-top: 149px;
-  padding-bottom: 149px;
+  padding-bottom: 98px;
   background-color: $secondary-grey-bg;
 
   @include tablet-mobile {
@@ -9,13 +9,13 @@
   }
 
   @include media-tablet {
-    margin-top: 65px;
+    margin-top: 33px;
     padding-bottom: 70px;
   }
 
   @include media-mobile {
-    margin-top: 80px;
-    padding-bottom: 52px;
+    margin-top: 84px;
+    padding-bottom: 3px;
   }
 }
 
@@ -24,7 +24,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 50px;
   width: 100%;
   flex-grow: 1;
   margin: 51px auto 0;
@@ -41,6 +40,5 @@
   @include media-mobile {
     flex-direction: column;
     padding: 0;
-    gap: 43px;
   }
 }

@@ -5,6 +5,7 @@
   min-height: 805px;
 
   @include media-tablet {
+    margin-top: -50px;
     padding-top: 70px;
     background: linear-gradient(180deg, $dark-grey-bg 82%, $primary-white-color 82%);
     min-height: 503px;
@@ -57,14 +58,15 @@
   overflow: hidden;
 
   @include media-tablet {
-    width: 503px;
-    height: 282px;
-    min-height: auto;
+    width: 69.49%;
+    min-height: 282px;
+    height: auto;
   }
 
   @include media-mobile {
-    width: 288px;
+    width: 100%;
     min-height: 161px;
+    height: auto;
   }
 }
 

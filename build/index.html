@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Moon онлайн магазин по продаже велосипедов">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./img/favicons/favicon.ico" sizes="16x16 32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="preload" href="./fonts/opensans-regular.woff2" as="font">
+    <title>Moon: велосипеды</title>
+  </head>
+
+  <body>
+    <!-- Класс header--no-js: реализация работы сайта без  включенного js (меню открыто, кнопка переключения меню скрыта)
+    header--open: реализация открытия/закрытия меню при подключенном js
+    -->
+    <header class="header header--no-js">
+      <div class="header__wrapper wrapper">
+        <button class="header__button button" type="button" aria-label="Переключить меню"></button>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#bikes">Виды велосипедов</a>
+            </li>
+            <li class="nav__item">
+              <a href="#video">Видео про велосипеды</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--no-js">
+        <div class="wrapper">
+          <div class="hero__content">
+            <a>
+              <img src="./img/svg/logo-icon.svg" width="68" height="20" alt="Логотип компании Moon">
+            </a>
+            <h1>Мы продаем велосипеды</h1>
+            <p>
+              Наш магазин отбирает только самые лучшие велосипеды для продажи
+            </p>
+          </div>
+
+          <form method="post" action="https://echo.htmlacademy.ru" class="hero__form">
+            <h2>Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" pattern="^[А-Яа-яЁё\s]+$" required="">
+            <label for="tel">Ваш телефон</label>
+            <input type="tel" id="tel" name="tel" data-phone-pattern="" placeholder="Введите Ваш номер телефона" required="">
+            <button type="submit">Подобрать велосипед мечты</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="about section wrapper" id="about">
+        <h2>Несколько фактов о нас</h2>
+
+        <ul class="about__list">
+          <li class="about__item">
+            <p>Самый широкий выбор велосипедов!</p>
+          </li>
+          <li class="about__item">
+            <p>Доставка велосипедов по всей России!</p>
+          </li>
+          <li class="about__item">
+            <p>Большой выбор крутых аксессуаров!</p>
+          </li>
+          <li class="about__item">
+            <p>Профессиональные консультации!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="bikes section" id="bikes">
+        <div class="wrapper">
+          <h2>Виды велосипедов</h2>
+
+          <div class="bikes__cards">
+            <article class="bikes__card card">
+              <picture>
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source type="image/webp" srcset="
+                    ./img/bikes/urban-mob@1x.webp 1x,
+                    ./img/bikes/urban-mob@2x.webp 2x
+                  " media="(max-width: 1023px)">
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source srcset="
+                    ./img/bikes/urban-mob@1x.jpg 1x,
+                    ./img/bikes/urban-mob@2x.jpg 2x
+                  " media="(max-width: 1023px)">
+                <!-- 1x: 342x503px; 2x: 684x1006px -->
+                <source type="image/webp" srcset="
+                    ./img/bikes/urban-dsk@1x.webp 1x,
+                    ./img/bikes/urban-dsk@2x.webp 2x
+                  " media="(min-width: 1024px)">
+                <!-- 1x: 342x503px; 2x: 684x1006px -->
+                <img src="./img/bikes/urban-dsk@1x.jpg" srcset="./img/bikes/urban-dsk@1x.jpg 2x" alt="Фотография городского велосипеда" width="342" height="503">
+              </picture>
+              <h3>Дорожный велосипед</h3>
+            </article>
+
+            <article class="bikes__card card">
+              <picture>
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source type="image/webp" srcset="
+                    ./img/bikes/mountain-mob@1x.webp 1x,
+                    ./img/bikes/mountain-mob@2x.webp 2x
+                  " media="(max-width: 1023px)">
+
+                <source srcset="
+                    ./img/bikes/mountain-mob@1x.jpg 1x,
+                    ./img/bikes/mountain-mob@2x.jpg 2x
+                  " media="(max-width: 1023px)">
+                <!-- 1x: 342x566px; 2x: 684x1132px -->
+                <source type="image/webp" srcset="
+                    ./img/bikes/mountain-dsk@1x.webp 1x,
+                    ./img/bikes/mountain-dsk@2x.webp 2x
+                  " media="(min-width: 1024px)">
+                <!-- 1x: 342x566px; 2x: 684x1132px -->
+                <img src="./img/bikes/mountain-dsk@1x.jpg" srcset="./img/bikes/mountain-dsk@2x.jpg 2x" alt="Фотография горного велосипеда" width="342" height="566">
+              </picture>
+              <h3>Горный велосипед</h3>
+            </article>
+
+            <article class="bikes__card card">
+              <picture>
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source type="image/webp" srcset="
+                    ./img/bikes/kids-mob@1x.webp 1x,
+                    ./img/bikes/kids-mob@2x.webp 2x
+                  " media="(max-width: 1023px)">
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source srcset="
+                    ./img/bikes/kids-mob@1x.jpg 1x,
+                    ./img/bikes/kids-mob@2x.jpg 2x
+                  " media="(max-width: 1023px)">
+                <!-- 1x: 342x513px; 2x: 684x1026px -->
+                <source type="image/webp" srcset="
+                    ./img/bikes/kids-dsk@1x.webp 1x,
+                    ./img/bikes/kids-dsk@2x.webp 2x
+                  " media="(min-width: 1024px)">
+                <!-- 1x: 342x513px; 2x: 684x1026px -->
+                <img src="./img/bikes/kids-dsk@1x.jpg" srcset="./img/bikes/kids-dsk@2x.jpg 2x" alt="Фотография детского велосипеда" width="342" height="512">
+              </picture>
+              <h3>Детский велосипед</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="video section" id="video">
+        <div class="wrapper">
+          <h2>Видео про велосипеды</h2>
+          <p>
+            В этом видео мы подробно расскажем про особенности выбора велосипеда
+            для себя.
+          </p>
+
+          <div class="video__container">
+            <video src="./video/person-cycling-down-a-rocky-slope.mp4" class="video__content" poster="./img/video/screen@1x.jpg"></video>
+            <button class="video__button video__play video__button--active" type="button" aria-label="Воспроизвести видео"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contacts">
+        <div class="wrapper">
+          <div class="footer__contacts-layout section">
+            <h2>Как нас найти?</h2>
+            <p>
+              Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная,
+              д. 19
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__map" id="map"></div>
+
+        <ul class="footer__links" id="contacts">
+          <li class="footer__link-item footer__link-item--mail">
+            <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          </li>
+          <li class="footer__link-item footer__link-item--tel">
+            <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
