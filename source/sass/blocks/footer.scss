@@ -58,13 +58,15 @@
   margin: 0 auto 39px;
   width: 957px;
   height: 530px;
-  background: $secondary-dark-grey-bg url("../img/map/map@1x.png");
+  background-color: $secondary-dark-grey-bg;
+  background-image: url("../img/map/map@1x.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   @include retina {
-    background: $secondary-dark-grey-bg url("../img/map/map@2x.png");
+    background-color: $secondary-dark-grey-bg;
+    background-image: url("../img/map/map@2x.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -74,11 +76,13 @@
     margin-bottom: 22px;
     width: 90.89%;
     height: 545px;
-    background: $secondary-dark-grey-bg url("../img/map/map-tablet@1x.png");
+    background-color: $secondary-dark-grey-bg;
+    background-image: url("../img/map/map-tablet@1x.png");
     background-size: cover;
 
     @include retina {
-      background: $secondary-dark-grey-bg url("../img/map/map-tablet@2x.png");
+      background-color: $secondary-dark-grey-bg;
+      background-image: url("../img/map/map-tablet@2x.png");
       background-size: cover;
     }
   }
@@ -87,11 +91,13 @@
     margin-bottom: 31px;
     width: 100%;
     height: 250px;
-    background: $secondary-dark-grey-bg url("../img/map/map-mob@1x.png");
+    background-color: $secondary-dark-grey-bg;
+    background-image: url("../img/map/map-mob@1x.png");
     background-size: cover;
 
     @include retina {
-      background: $secondary-dark-grey-bg url("../img/map/map-mob@2x.png");
+      background-color: $secondary-dark-grey-bg;
+      background-image: url("../img/map/map-mob@2x.png");
       background-size: cover;
     }
   }

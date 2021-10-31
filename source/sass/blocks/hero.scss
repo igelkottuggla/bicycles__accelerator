@@ -5,14 +5,14 @@
   min-height: 763px;
   height: 100%;
   background-color: $primary-grey-bg;
-  background-image: url("../img/hero/hero-bg-dsk@1x.jpg");
+  background-image: url("../img/hero/hero-bg-dsk@1x.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @include retina {
     background-color: $primary-grey-bg;
-    background-image: url("../img/hero/hero-bg-dsk@2x.jpg");
+    background-image: url("../img/hero/hero-bg-dsk@2x.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@
 
   @include media-tablet {
     background-color: $primary-grey-bg;
-    background-image: url("../img/hero/hero-bg-tablet@1x.jpg");
+    background-image: url("../img/hero/hero-bg-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -68,7 +68,7 @@
 
     @include retina {
       background-color: $primary-grey-bg;
-      background-image: url("../img/hero/hero-bg-tablet@2x.jpg");
+      background-image: url("../img/hero/hero-bg-tablet@2x.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -81,14 +81,14 @@
     padding-bottom: 70px;
     width: 100vw;
     background-color: $primary-grey-bg;
-    background-image: url("../img/hero/hero-bg-mob@1x.jpg");
+    background-image: url("../img/hero/hero-bg-mob@1x.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     @include retina {
       background-color: $primary-grey-bg;
-      background-image: url("../img/hero/hero-bg-mob@2x.jpg");
+      background-image: url("../img/hero/hero-bg-mob@2x.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
