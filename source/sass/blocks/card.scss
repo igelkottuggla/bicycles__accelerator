@@ -39,10 +39,17 @@
   }
 }
 
-@include media-desktop {
-  .card:not(:nth-of-type(3n)) {
+.card:not(:nth-of-type(3n)) {
     margin-right: 50px;
-  }
+
+    @include media-tablet {
+      margin-right: 0;
+    }
+
+    @include media-mobile {
+      margin-right: auto;
+      margin-left: auto;
+    }
 }
 
 .card:nth-child(3n-1) {

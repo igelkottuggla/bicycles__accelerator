@@ -4,15 +4,14 @@
     @content;
   }
 }
-
-@mixin media-tablet {
-  @media (min-width: $tablets-min) and (max-width: $tablets-max) {
+@mixin tablet-mobile {
+  @media (min-width: $phones-min) and (max-width: $tablets-max) {
     @content;
   }
 }
 
-@mixin tablet-mobile {
-  @media (min-width: $phones-min) and (max-width: $tablets-max) {
+@mixin media-tablet {
+  @media (min-width: $tablets-min) and (max-width: $tablets-max) {
     @content;
   }
 }

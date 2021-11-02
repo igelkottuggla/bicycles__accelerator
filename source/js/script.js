@@ -105,8 +105,8 @@ if (form) {
 
   inputName.addEventListener('input', function (event) {
     const el = event.target;
-    if (el.validity.patternMismatch) {
-      inputName.setCustomValidity('Имя должно быть написано кириллицей');
+    if (el.value === '') {
+      inputName.setCustomValidity('Введите имя');
     } else {
       inputName.setCustomValidity('');
     }

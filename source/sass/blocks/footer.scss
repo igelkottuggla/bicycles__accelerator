@@ -60,16 +60,16 @@
   height: 530px;
   background-color: $secondary-dark-grey-bg;
   background-image: url("../img/map/map@1x.png");
-  background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @include retina {
     background-color: $secondary-dark-grey-bg;
     background-image: url("../img/map/map@2x.png");
-    background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   @include media-tablet {
@@ -79,16 +79,20 @@
     background-color: $secondary-dark-grey-bg;
     background-image: url("../img/map/map-tablet@1x.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     @include retina {
       background-color: $secondary-dark-grey-bg;
       background-image: url("../img/map/map-tablet@2x.png");
       background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 
   @include media-mobile {
-    margin-bottom: 31px;
+    margin-bottom: 33px;
     width: 100%;
     height: 250px;
     background-color: $secondary-dark-grey-bg;
@@ -105,25 +109,28 @@
 
 .footer__links {
   @include reset-list-slyle;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 90px;
+  row-gap: 15px;
+  justify-content: flex-start;
   margin: 0 auto;
   font-size: 16px;
   line-height: 22px;
   color: $partial-opacity-grey-text-05;
-  max-width: 528px;
+  max-width: 562px;
 
   @include media-tablet {
     width: 90.89%;
-    max-width: 535px;
+    max-width: 557px;
   }
 
   @include media-mobile {
+    display: flex;
     flex-direction: column;
-    padding-left: 12px;
-    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    width: 85.75%;
   }
 }
 
@@ -131,78 +138,21 @@
   @include reset-style-link;
   position: relative;
   display: flex;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 50%;
-    transform: translateY(-50%);
-    background-size: cover;
-    left: -15px;
-  }
+  align-items: center;
+  justify-content: flex-start;
+  fill: none;
 }
 
-.footer__link-item--mail a {
-  padding-left: 22px;
-
-  @include media-tablet {
-    padding-left: 29px;
-  }
-
-  @include media-mobile {
-    padding-left: 36px;
-  }
-
-  &::before {
-    width: 26px;
-    height: 20px;
-    background-image: url("../img/svg/mail-icon.svg");
-
-    @include media-mobile {
-      transform: translateY(-35%);
-      left: -7px;
-    }
-  }
+.footer__svg {
+  margin-right: 15px;
 }
 
-.footer__link-item--tel a {
-  padding-left: 27px;
-
-  @include media-mobile {
-    padding-left: 14px;
-  }
-
-  &::before {
-    width: 22px;
-    height: 22px;
-    background-image: url("../img/svg/tel-icon.svg");
-
-    @include media-tablet {
-      left: -9px;
-    }
-
-    @include media-mobile {
-      transform: translateY(-55%);
-      left: -22px;
-    }
-  }
-}
 
 .footer__link-item {
   margin-bottom: 15px;
 
   @include media-mobile {
-    margin-bottom: 26px;
-  }
-}
-
-.footer__link-item:nth-of-type(odd) {
-  margin-right: auto;
-
-  @include media-mobile {
-    margin-right: 0;
+    margin-bottom: 5px;
   }
 }
 

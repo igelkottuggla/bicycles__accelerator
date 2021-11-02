@@ -99,7 +99,6 @@
               id="name"
               name="name"
               placeholder="Введите Ваше Имя"
-              pattern="^[А-Яа-яЁё\s]+$"
               required
             />
             <label for="tel">Ваш телефон</label>
@@ -303,12 +302,30 @@
 
         <ul class="footer__links" id="contacts">
           <li class="footer__link-item footer__link-item--mail">
-            <a href="mailto:puteshestviemechta@gmail.ru"
-              >puteshestviemechta@gmail.ru</a
+            <a href="mailto:puteshestviemechta@gmail.ru">
+              <svg
+                class="footer__svg"
+                width="26"
+                height="20"
+                viewbox="0 0 26 20"
+              >
+                <use xlink:href="./img/sprite_auto.svg#mail-icon"></use>
+              </svg>
+              puteshestviemechta@gmail.ru</a
             >
           </li>
           <li class="footer__link-item footer__link-item--tel">
-            <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+            <a href="tel:+749978468446">
+              <svg
+                class="footer__svg"
+                width="22"
+                height="24"
+                viewbox="0 0 22 24"
+              >
+                <use xlink:href="./img/sprite_auto.svg#tel-icon"></use>
+              </svg>
+              +7 (499) -784-684-46</a
+            >
           </li>
         </ul>
       </div>
